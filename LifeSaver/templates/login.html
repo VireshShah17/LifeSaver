@@ -16,34 +16,61 @@
     />
   </head>
 
-<body class="bg-gray-700 flex justify-center items-center h-screen">
-    <div class="bg-blue-300 p-8 rounded-lg border-4 border-blue-700 max-w-sm w-full">
-        <h2 class="text-2xl font-semibold mb-4 text-center">Login</h2>
-        <form>
-            <div class="mb-4">
-                <label for="email" class="block text-black">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="abc12@gmail.com" class="mt-1 p-2 block w-full border rounded-md">
-            </div>
-            <div class="mb-4">
-                <label for="password" class="block text-black">Password</label>
-                <input type="password" id="password" name="password" class="mt-1 p-2 block w-full border rounded-md">
-            </div>
-            <p class="mb-4">Or sign in with</p>
-            <div class="flex space-x-4">
-                <!-- Google Sign-In Button -->
-                <button type="button"
-                    class="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700">
-                    <i class="fab fa-google"></i>
-                </button>
-            </div>
-            <div class="mb-4 mt-5 flex flex-col">
-                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Sign
-                    In</button>
-                <a href="#" class="text-blue-700 hover:underline text-center">Forgot Password?</a>
-            </div>
-        </form>
-        <p class="mt-4">Don't have an account? <a href="createacc.html" class="text-blue-700 hover:underline">Create
-                Account</a></p>
+  <body class="bg-gray-700 flex justify-center items-center h-screen">
+    <div
+      class="bg-blue-300 p-8 rounded-lg border-4 border-blue-700 max-w-sm w-full"
+    >
+      <h2 class="text-2xl font-semibold mb-4 text-center">Login</h2>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="block text-black">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="abc12@gmail.com"
+            class="mt-1 p-2 block w-full border rounded-md"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-black">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="mt-1 p-2 block w-full border rounded-md"
+          />
+        </div>
+        <p class="mb-4">Or sign in with</p>
+        <div class="flex space-x-4">
+          <!-- Google Sign-In Button -->
+          <button
+            type="button"
+            class="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700"
+          >
+            <i class="fab fa-google"></i>
+          </button>
+        </div>
+        <div class="mb-4 mt-5 flex flex-col">
+          <button
+            type="submit"
+            class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+          >
+            Sign In
+          </button>
+          <a href="#" class="text-blue-700 hover:underline text-center"
+            >Forgot Password?</a
+          >
+        </div>
+      </form>
+      <p class="mt-4">
+        Don't have an account?
+        <a
+          href="{% url 'index:register' %}"
+          class="text-blue-700 hover:underline"
+          >Create Account</a
+        >
+      </p>
     </div>
 
     <!-- Include FontAwesome script for Google icon -->
