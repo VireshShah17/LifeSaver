@@ -1,121 +1,213 @@
-{% load static tailwind_tags %}
-{% load static %}
+{% load static tailwind_tags %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Blood Receiver and Donation</title>
     {% tailwind_css %}
     <style>
-        body {
-            background-image: url('https://wallpapercave.com/wp/wp4323467.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            height: 100%;
-            width: 100%;
-        }
+      body {
+        background-image: url("https://wallpapercave.com/wp/wp4323467.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 class="bg-white">Heyy</h1>
     <!-- Fixed Navigation Bar -->
     <nav class="bg-red-500 p-4 fixed w-full z-10 top-0">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-white font-bold hover:text-blue-400">Home</a>
-            <div>
-                <a href="{% url 'index:contact' %}" class="text-white mx-2 hover:text-blue-400">Contact Us</a>
-                <!-- <a href="#" class="text-white mx-2 hover:text-blue-400">About</a> -->
-                <a href="{% url 'index:login' %}" class="text-white mx-2 hover:text-blue-400">Login</a>
-                <a href="#" class="text-white mx-2 hover:text-blue-400">Sign Out</a>
-            </div>
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          href="{% url 'index:home' %}"
+          class="text-white font-bold hover:text-blue-400"
+          >Home</a
+        >
+        <div>
+          <a
+            href="{% url 'index:contact' %}"
+            class="text-white mx-2 hover:text-blue-400"
+            >Contact Us</a
+          >
+          <!-- <a href="#" class="text-white mx-2 hover:text-blue-400">About</a> -->
+          <a
+            href="{% url 'index:login' %}"
+            class="text-white mx-2 hover:text-blue-400"
+            >Login</a
+          >
+          <a href="#" class="text-white mx-2 hover:text-blue-400">Sign Out</a>
         </div>
+      </div>
     </nav>
 
     <!-- Main Content -->
     <div class="container mx-auto my-8">
-        <h1 class="text-3xl font-bold text-white mb-4 py-14">Welcome to the Blood Receiver and Donation Website</h1>
-        <p class="text-white mb-4">This is a platform for connecting blood donors with recipients. Please fill out the
-            form below if you are in need of blood or if you would like to donate.</p>
-        <!-- Your content here -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo exercitationem et esse placeat provident
-            voluptates ex beatae, tempora quod alias magni quaerat hic inventore eius iste, natus explicabo nobis
-            reprehenderit!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod voluptatum ipsam at, debitis
-            reprehenderit eveniet deleniti praesentium labore pariatur nulla, excepturi suscipit delectus dolores quae,
-            totam repellendus iste nemo!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos velit eveniet repellendus. Inventore ex
-            harum error pariatur odit, quis eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
-            accusantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores, fugit error qui tempore modi vitae
-            quis nesciunt, provident quibusdam maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.</p>
-
+      <h1 class="text-3xl font-bold text-white mb-4 py-14">
+        Welcome to the Blood Receiver and Donation Website
+      </h1>
+      <p class="text-white mb-4">
+        This is a platform for connecting blood donors with recipients. Please
+        fill out the form below if you are in need of blood or if you would like
+        to donate.
+      </p>
+      <!-- Your content here -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+        exercitationem et esse placeat provident voluptates ex beatae, tempora
+        quod alias magni quaerat hic inventore eius iste, natus explicabo nobis
+        reprehenderit!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quod
+        voluptatum ipsam at, debitis reprehenderit eveniet deleniti praesentium
+        labore pariatur nulla, excepturi suscipit delectus dolores quae, totam
+        repellendus iste nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos
+        velit eveniet repellendus. Inventore ex harum error pariatur odit, quis
+        eligendi sequi dolorum eius a, obcaecati similique perspiciatis ad
+        accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolores,
+        fugit error qui tempore modi vitae quis nesciunt, provident quibusdam
+        maxime iusto quia quam atque saepe tempora debitis cumque blanditiis.
+      </p>
     </div>
     <footer>
-        <div class="bg-black h-10">
-            <p class="text-white"> Copyright,LifeSaver</p></div>
+      <div class="bg-black h-10">
+        <p class="text-white">Copyright,LifeSaver</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

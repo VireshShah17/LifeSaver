@@ -1,3 +1,4 @@
 admin ID: lifesaver
 admin password: test123123
-url: http://127.0.0.1:8000/admin/
+url: http://127.0.0.1:8000/admin/ (after running the server)
+
