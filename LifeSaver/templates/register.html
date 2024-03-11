@@ -1,15 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account Form</title>
-    <link rel="stylesheet" href="createacc.css">
+    <link rel="stylesheet" href="{% static 'css/createacc.css' %}">
 </head>
 <body>
 
 <div class="container">
     <h2>Create Account</h2>
+    {% csrf_token %}
     <form action="#" method="POST">
         <div class="form-group">
             <label for="name">Name:</label>
