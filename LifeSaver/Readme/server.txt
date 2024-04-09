@@ -1,2 +1,0 @@
-start server: python manage.py runserver
-load css: python mange.py collecstatic
