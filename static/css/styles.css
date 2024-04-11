@@ -47,3 +47,9 @@ a{
     margin: 7px;
     padding-right: 10px;
 }
+
+main .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
