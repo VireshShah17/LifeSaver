@@ -25,8 +25,15 @@
             Blood donation is a simple and safe process that can make a significant difference in the lives of those in need.
             By donating blood, you can help ensure that the blood supply is sufficient for patients who require transfusions.
         </p>
-        <button>Donor</button>
-        <button>Receiver</button>
+        <form action="{% url 'index:donor' %}">
+            {% csrf_token %}
+            <button>Donor</button>
+        </form>
+        <form action="{% url 'index:receiver' %}">
+            {% csrf_token %}
+            <button>Receiver</button>
+        </form>
+        
     </main>
 
     <footer>
