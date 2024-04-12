@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & About Us</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  color: #333;
+}
+
+.contact-form {
+  width: 45%;
+}
+
+.about-us {
+  width: 45%;
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+label{
+    margin-top: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Name" required><br>
+        <label for="number">Number:</label><br>
+        <input type="tel" id="number" name="number" placeholder="Number" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="about-us">
+      <h2>About Us</h2>
+      <p>Our Name: XYZ Company</p>
+      <p>Our Number: 123-456-7890</p>
+      <p>Our Address: 123 Main St, Anytown USA</p>
+      <p>Email: <a href="mailto:info@xyzcompany.com">info@xyzcompany.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
