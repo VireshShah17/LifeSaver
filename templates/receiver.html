@@ -56,6 +56,7 @@
 <body>
     <h1>Receiver Information</h1>
     <form>
+        {% csrf_token %}
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
 
