@@ -1,5 +1,0 @@
-1. To run the server: "python manage.py runserver" -> make sure you are in the same directory as manage.py
-
-2. Location of css files: "static/styles/'SAVE here your css file'"
-
-3. Location of html files: "templates/"
